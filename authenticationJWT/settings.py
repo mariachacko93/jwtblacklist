@@ -37,8 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+    'rest_framework',
+    'app',
+
+    'rest_framework_simplejwt.token_blacklist' ,   
 ]
+
+from datetime import timedelta
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -51,10 +56,19 @@ MIDDLEWARE = [
 ]
 
 
+
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
+}
+
+from datetime import timedelta
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=1),
 }
 
 

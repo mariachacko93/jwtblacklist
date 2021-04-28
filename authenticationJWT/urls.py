@@ -26,4 +26,5 @@ urlpatterns = [
          jwt_views.TokenRefreshView.as_view(),
          name ='token_refresh'),
     path('', include('app.urls')),
+     path('admin/', admin.site.urls),
 ]
