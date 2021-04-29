@@ -1,0 +1,4 @@
+setuptools~=56.0.0
+FlaskBookProject~=0.0.0
+Flask~=1.1.2
+pymongo~=3.11.3

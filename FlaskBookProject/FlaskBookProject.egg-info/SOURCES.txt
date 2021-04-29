@@ -1,0 +1,8 @@
+setup.py
+FlaskBookProject/__init__.py
+FlaskBookProject/views.py
+FlaskBookProject.egg-info/PKG-INFO
+FlaskBookProject.egg-info/SOURCES.txt
+FlaskBookProject.egg-info/dependency_links.txt
+FlaskBookProject.egg-info/requires.txt
+FlaskBookProject.egg-info/top_level.txt
